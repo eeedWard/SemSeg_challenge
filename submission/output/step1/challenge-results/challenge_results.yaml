@@ -1,0 +1,6 @@
+!!omap
+- status: success
+- msg: null
+- scores:
+    score1: 98.0
+- stats: {}

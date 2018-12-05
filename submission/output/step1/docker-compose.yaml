@@ -1,0 +1,39 @@
+networks:
+  evaluation: {}
+services:
+  evaluator:
+    environment:
+      challenge_name: aido1_luck-v3
+      challenge_step_name: step1
+      uid: 1000
+      username: edoardo
+    image: andreacensi/aido1_luck-v3-evaluator:2018_10_12_00_08_06
+    networks:
+      evaluation:
+        aliases:
+        - evaluation
+    volumes:
+    - /home/edoardo/git/AIDOmine/submission/output/step1.tmp/challenge-solution-output:/challenge-solution-output:rw
+    - /home/edoardo/git/AIDOmine/submission/output/step1.tmp/challenge-results:/challenge-results:rw
+    - /home/edoardo/git/AIDOmine/submission/output/step1.tmp/challenge-description:/challenge-description:rw
+    - /home/edoardo/git/AIDOmine/submission/output/step1.tmp/challenge-evaluation-output:/challenge-evaluation-output:rw
+    - /home/edoardo/git/AIDOmine/submission/output/step1.tmp/previous-steps:/previous-steps:rw
+  solution:
+    environment:
+      challenge_name: aido1_luck-v3
+      challenge_step_name: step1
+      uid: 1000
+      username: edoardo
+    image: sha256:e8f1e6eedf81f0b78ae4ce1c97819268c4a2917ccbb50eb17344d696133f3082
+    networks:
+      evaluation:
+        aliases:
+        - evaluation
+    volumes:
+    - /home/edoardo/git/AIDOmine/submission/output/step1.tmp/challenge-solution-output:/challenge-solution-output:rw
+    - /home/edoardo/git/AIDOmine/submission/output/step1.tmp/challenge-results:/challenge-results:rw
+    - /home/edoardo/git/AIDOmine/submission/output/step1.tmp/challenge-description:/challenge-description:rw
+    - /home/edoardo/git/AIDOmine/submission/output/step1.tmp/challenge-evaluation-output:/challenge-evaluation-output:rw
+    - /home/edoardo/git/AIDOmine/submission/output/step1.tmp/previous-steps:/previous-steps:rw
+version: '3.0'
+

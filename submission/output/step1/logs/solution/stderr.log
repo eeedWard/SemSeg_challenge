@@ -1,0 +1,3 @@
+2018-12-05T09:55:00.653435050Z INFO:duckietown-challenges:duckietown-challenges 3.2.15
+2018-12-05T09:55:02.310320822Z DEBUG:duckietown-challenges:[35mWritten to: /challenge-solution-output/output-solution.yaml[0m
+2018-12-05T09:55:05.240017034Z INFO:duckietown-challenges:[32msolution:Graceful termination of wrap_solution().[0m

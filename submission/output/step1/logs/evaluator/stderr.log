@@ -1,0 +1,6 @@
+2018-12-05T09:54:58.714645704Z INFO:dts:duckietown-shell 3.0.11
+2018-12-05T09:55:00.433848418Z INFO:duckietown-challenges:duckietown-challenges 3.0.23
+2018-12-05T09:55:00.589084158Z DEBUG:duckietown-challenges:Written to: /challenge-description/description.yaml
+2018-12-05T09:55:00.589168957Z DEBUG:duckietown-challenges:Output /challenge-solution-output/output-solution.yaml not ready yet (0 secs passed, will wait 6000 secs more)
+2018-12-05T09:55:01.590428160Z DEBUG:duckietown-challenges:Output /challenge-solution-output/output-solution.yaml not ready yet (1 secs passed, will wait 5999 secs more)
+2018-12-05T09:55:02.599068348Z DEBUG:duckietown-challenges:Written to: /challenge-results/challenge_results.yaml

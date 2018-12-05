@@ -1,0 +1,12 @@
+services:
+  evaluator:
+    environment: {}
+    image: andreacensi/aido1_luck-v3-evaluator:2018_10_12_00_08_06
+    image_digest: sha256:57b94fe7d47d6b28f8689f90150b09a660dc67a0f1c2d4c60d2e85ceabcfa532
+  solution:
+    environment: {}
+    image: SUBMISSION_CONTAINER
+    image_digest: null
+version: '3'
+
+s: sha256:e8f1e6eedf81f0b78ae4ce1c97819268c4a2917ccbb50eb17344d696133f3082
